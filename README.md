@@ -49,7 +49,7 @@ Cuisinable is there every step of the way to ensure your recipe can be enjoyed b
 
 ## Overview
 
-This project allows users to generate recipes tailored to their food intolerances and cuisine preferences, guiding them from an initial selection screen through to a full library of matching, safe to eat dishes. It is built with React, JavaScript, HTML, CSS, and Bootstrap on the frontend, and uses Vite as the build tool. The backend is built with Express.js and Node.js, and communicates with the Spoonacular API to retrieve recipe data filtered by the user's selected cuisine and intolerances, including full ingredient lists and step by step instructions for every result.
+This project is a full-stack web application that allows users to generate recipes tailored to their food intolerances and cuisine preferences, guiding them from an initial selection screen to a full library of matching, safe-to-eat dishes. It is built with React, JavaScript, HTML, CSS, and Bootstrap on the frontend, with Vite used as the build tool. The backend is built with Node.js and Express.js and communicates with the Spoonacular API to retrieve recipe data based on the user’s selected cuisine and intolerances, including complete ingredient lists and step-by-step instructions for each result.
 
 <br>
 
