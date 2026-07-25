@@ -2,7 +2,7 @@
 <h2 align="center">(Hackcamp 2024)</h2>
 
 <h4 align="center">
-  Making every meal possible, enjoyable, and accessible<br>
+  Making every meal possible, enjoyable, and accessible <br>
   because everyone deserves a plate that's made just for them.
 </h4>
 
