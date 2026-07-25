@@ -6,7 +6,7 @@
   because everyone deserves a plate that's made just for them.
 </h4>
 
-<p align="center"><img src="public/images/bear-chef.png" alt="Cuisinable mascot, Chef Bearable" width="300"></p>
+<p align="center"><img src="docs/images/bear-chef.png" alt="Cuisinable mascot, Chef Bearable" width="300"></p>
 
 <p align="center">
   <a href="https://devpost.com/software/cuisinably">Devpost</a> &nbsp;|&nbsp; <a href="https://cuisinable.onrender.com">Live Demo</a>
