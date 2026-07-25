@@ -58,7 +58,7 @@ This project is a full-stack web application that allows users to generate recip
 ### Landing Page
 The landing page welcomes users with Chef Bearable, the app's mascot, and a "Get Started" button that begins the recipe generation process.
 
-<p align="center"><img src="./bear/landing.png?raw=true" alt="Landing Page" width="700"></p>
+<p align="center"><img src="docs/screenshots/landing.png" alt="Landing Page" width="700"></p>
 
 <br>
 
@@ -98,21 +98,21 @@ Users begin by selecting any number of food intolerances that apply to them, cho
 
 <br>
 
-<p align="center"><img src="./bear/selector.png?raw=true" alt="Intolerance and Cuisine Selector" width="700"></p>
+<p align="center"><img src="docs/screenshots/selector.png" alt="Intolerance and Cuisine Selector" width="700"></p>
 
 <br>
 
 ### Recipe Results
 Based on the selected intolerances and cuisine, Cuisinable displays a set of recipe cards, each showing a dish's image and title. A "Change Cuisine" button lets users restart the process at any time to search with a new set of preferences.
 
-<p align="center"><img src="./bear/meals.png?raw=true" alt="Recipe Results" width="700"></p>
+<p align="center"><img src="docs/screenshots/meals.png" alt="Recipe Results" width="700"></p>
 
 <br>
 
 ### Full Recipe View
 Clicking a recipe card opens a detailed view of that dish, including its image, a summary description, a full list of ingredients, and step by step preparation instructions. A close icon returns users to the recipe results.
 
-<p align="center"><img src="./bear/recipes.png?raw=true" alt="Full Recipe View" width="700"></p>
+<p align="center"><img src="docs/screenshots/recipes.png" alt="Full Recipe View" width="700"></p>
 
 <br>
 

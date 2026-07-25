@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 function Selector(props) {
 
@@ -151,8 +151,12 @@ function Selector(props) {
   );
 }
 
-
-
+Selector.propTypes = {
+  getMeals: PropTypes.func.isRequired,
+  saveUserIntolerances: PropTypes.func.isRequired,
+  saveUserCuisine: PropTypes.func.isRequired,
+  fetchMealSelections: PropTypes.func.isRequired,
+};
 
 export default Selector;
 

@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 function Landing(props) {
 
@@ -12,5 +12,9 @@ function Landing(props) {
     </div>
   );
 }
+
+Landing.propTypes = {
+  getStarted: PropTypes.func.isRequired,
+};
 
 export default Landing;

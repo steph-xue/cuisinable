@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import PropTypes from "prop-types";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
@@ -129,5 +130,30 @@ function Meals(props) {
         </div>
     );
 }
+
+Meals.propTypes = {
+  recipes: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string,
+      title: PropTypes.string,
+      summary: PropTypes.string,
+      analyzedInstructions: PropTypes.arrayOf(
+        PropTypes.shape({
+          steps: PropTypes.arrayOf(
+            PropTypes.shape({
+              step: PropTypes.string,
+              ingredients: PropTypes.arrayOf(
+                PropTypes.shape({
+                  name: PropTypes.string,
+                })
+              ),
+            })
+          ),
+        })
+      ),
+    })
+  ).isRequired,
+  getStarted: PropTypes.func.isRequired,
+};
 
 export default Meals;
