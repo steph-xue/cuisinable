@@ -222,7 +222,7 @@ body {
   z-index: 100;
   background-color: #6C3E10;
   width: 80vw;
-  height: 90vh; /* Adjust this as needed to fit your content */
+  height: 96vh; /* Adjust this as needed to fit your content */
   padding-left: 2em;
   padding-right: 2em;
 }
@@ -257,6 +257,9 @@ body {
   font-weight: 400;
   margin-top: 1em;
   text-align: left;
+  max-height: 30vh;
+  overflow-y: auto;
+  padding-right: 1em;
 }
 
 .recipe-ingredients {

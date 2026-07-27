@@ -42,28 +42,29 @@ function Meals(props) {
     // Map the recipes to individual meal elements
     const mealElements = props.recipes.map((meal, index) => {
 
-        // Safely access the first instruction object if it exists
-        const firstInstruction = meal.analyzedInstructions[0];
-        
+        // Spoonacular sometimes splits a recipe's steps across multiple named
+        // instruction sections, so flatten all of them into one ordered list
+        const allSteps = meal.analyzedInstructions.flatMap((instruction) => instruction.steps);
+
         // Render the recipe instructions and ingredients
-        const recipeInstructions = firstInstruction ? (
+        const recipeInstructions = allSteps.length > 0 ? (
             <div className="recipe-instructions" key={0}>
                 <h3 className="recipe-instructions-title">Instructions</h3>
                 <ol className="recipe-instructions-steps">
-                    {firstInstruction.steps.map((step, stepIndex) => (
+                    {allSteps.map((step, stepIndex) => (
                         <li key={stepIndex}>{step.step}</li>
                     ))}
                 </ol>
             </div>
-        ) : null; // Return null if there is no instruction
-    
+        ) : null; // Return null if there are no steps
+
         // Render the recipe ingredients
-        const recipeIngredients = firstInstruction ? (() => {
+        const recipeIngredients = allSteps.length > 0 ? (() => {
             // Use a Set to store unique ingredient names (no duplicates)
             const uniqueIngredients = new Set();
-    
-            // Extract ingredients from the steps of the first instruction
-            firstInstruction.steps.forEach((step) => {
+
+            // Extract ingredients from all steps across every section
+            allSteps.forEach((step) => {
                 step.ingredients.forEach((ingredient) => {
                     uniqueIngredients.add(ingredient.name);
                 });
