@@ -124,6 +124,7 @@ Clicking a recipe card opens a detailed view of that dish, including its image, 
 | Backend | Express.js, Node.js |
 | APIs | Spoonacular API (supplies recipe data filtered by cuisine and intolerances) |
 | Build Tool | Vite |
+| Deployment | Render |
 
 <br>
 
