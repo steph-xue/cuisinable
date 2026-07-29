@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
+// Render the Meals component
 function Meals(props) {
 
     // Set the initial state of getRecipes to false (to show the full recipe view)

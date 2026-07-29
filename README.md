@@ -49,7 +49,7 @@ Cuisinable is there every step of the way to ensure your recipe can be enjoyed b
 
 ## Overview
 
-This project is a full-stack web application that allows users to generate recipes tailored to their food intolerances and cuisine preferences, guiding them from an initial selection screen to a full library of matching, safe-to-eat dishes. It is built with React, JavaScript, HTML, CSS, and Bootstrap on the frontend, with Vite used as the build tool. The backend is built with Node.js and Express.js and communicates with the Spoonacular API to retrieve recipe data based on the user’s selected cuisine and intolerances, including complete ingredient lists and step-by-step instructions for each result. The application is deployed on Render for cloud hosting.
+This project is a full-stack web application that allows users to generate recipes tailored to their food intolerances and cuisine preferences, guiding them from an initial selection screen to a full library of matching, safe-to-eat dishes. It is built with React, JavaScript, HTML, CSS, and Bootstrap on the frontend, with Vite used as the build tool. The backend is built with Node.js, Express.js, and JavaScript, and communicates with the Spoonacular API to retrieve recipe data based on the user’s selected cuisine and intolerances, including complete ingredient lists and step-by-step instructions for each result. The application is deployed on Render for cloud hosting.
 
 <br>
 
@@ -121,7 +121,7 @@ Clicking a recipe card opens a detailed view of that dish, including its image, 
 | Layer | Technologies |
 |---|---|
 | Frontend | React, JavaScript, HTML, CSS, Bootstrap |
-| Backend | Express.js, Node.js |
+| Backend | Express.js, Node.js, JavaScript |
 | APIs | Spoonacular API (supplies recipe data filtered by cuisine and intolerances) |
 | Build Tool | Vite |
 | Deployment | Render |
@@ -169,7 +169,7 @@ npm --version
 
 <br>
 
-**1. Clone the repository**
+**1. Clone the Repository**
 
 This downloads a copy of the project to your computer and moves you into the project folder.
 ```bash
@@ -177,18 +177,18 @@ git clone https://github.com/steph-xue/cuisinable.git
 cd cuisinable
 ```
 
-**2. Install the dependencies**
+**2. Install the Dependencies**
 
-This installs React, Express, and everything else the project needs to run.
+This installs all dependencies the project needs to run.
 ```bash
 npm install
 ```
 
-**3. Start the development server**
+**3. Start the Development Server**
 
 This runs both the frontend and backend together on a single local server.
 ```bash
 npm run dev
 ```
 
-Once the server is running, open `http://localhost:8000` in your browser to start using the application.
+Once the server is running, open the local URL shown in the terminal to start using the application.

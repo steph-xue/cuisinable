@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
 
+// Render the Selector component
 function Selector(props) {
 
-// Render the selector page
+  // Render the selector page
   return (
     <div className="selector-page">
         <div className="selector">

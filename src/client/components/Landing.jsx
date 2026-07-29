@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 
+// Render the Landing component
 function Landing(props) {
 
   // Render the landing page
