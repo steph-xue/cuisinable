@@ -49,7 +49,7 @@ Cuisinable is there every step of the way to ensure your recipe can be enjoyed b
 
 ## Overview
 
-This project is a full-stack web application that allows users to generate recipes tailored to their food intolerances and cuisine preferences, guiding them from an initial selection screen to a full library of matching, safe-to-eat dishes. It is built with React, JavaScript, HTML, CSS, and Bootstrap on the frontend, with Vite used as the build tool. The backend is built with Node.js, Express.js, and JavaScript, and communicates with the Spoonacular API to retrieve recipe data based on the user’s selected cuisine and intolerances, including complete ingredient lists and step-by-step instructions for each result. The application is deployed on Render for cloud hosting.
+This project is a full-stack web application that allows users to generate recipes tailored to their food intolerances and cuisine preferences, guiding them from an initial selection screen to a full library of matching, safe-to-eat dishes. The application is built with React, JavaScript, HTML, CSS, and Bootstrap on the frontend. The backend is built with Node.js, Express.js, and JavaScript, and communicates with the Spoonacular API to retrieve recipe data based on the user’s selected cuisine and intolerances, including complete ingredient lists and step-by-step instructions for each result. Vite, integrated via vite-express, is used as the build tool and serves the frontend and backend together from a single server, and the application is deployed on Render for cloud hosting.
 
 <br>
 
@@ -123,7 +123,7 @@ Clicking a recipe card opens a detailed view of that dish, including its image, 
 | Frontend | React, JavaScript, HTML, CSS, Bootstrap |
 | Backend | Express.js, Node.js, JavaScript |
 | APIs | Spoonacular API (supplies recipe data filtered by cuisine and intolerances) |
-| Build Tool | Vite |
+| Build Tool | Vite (vite-express) |
 | Deployment | Render |
 
 <br>
