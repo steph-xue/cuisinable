@@ -49,7 +49,7 @@ Cuisinable is there every step of the way to ensure your recipe can be enjoyed b
 
 ## Overview
 
-This project is a full-stack web application that allows users to generate recipes tailored to their food intolerances and cuisine preferences, guiding them from an initial selection screen to a full library of matching, safe-to-eat dishes. The application is built with React, JavaScript, HTML, CSS, and Bootstrap on the frontend. The backend is built with Node.js, Express.js, and JavaScript, and communicates with the Spoonacular API to retrieve recipe data based on the user’s selected cuisine and intolerances, including complete ingredient lists and step-by-step instructions for each result. Vite, integrated via vite-express, is used as the build tool and serves the frontend and backend together from a single server. The application is deployed on Render for cloud hosting.
+This project is a full-stack web application that allows users to generate recipes tailored to their food intolerances and cuisine preferences, guiding them from an initial selection screen to a full library of matching, safe-to-eat dishes. The application is built with React, JavaScript, CSS, and Bootstrap on the frontend. The backend is built with Node.js, Express.js, and JavaScript, and communicates with the Spoonacular API to retrieve recipe data based on the user’s selected cuisine and intolerances, including complete ingredient lists and step-by-step instructions for each result. Vite, integrated via vite-express, is used as the build tool and serves the frontend and backend together from a single server. The application is deployed on Render for cloud hosting.
 
 <br>
 
@@ -120,7 +120,7 @@ Clicking a recipe card opens a detailed view of that dish, including its image, 
 
 | Layer | Technologies |
 |---|---|
-| Frontend | React, JavaScript, HTML, CSS, Bootstrap |
+| Frontend | React, JavaScript, CSS, Bootstrap |
 | Backend | Express.js, Node.js, JavaScript |
 | APIs | Spoonacular API (supplies recipe data filtered by cuisine and intolerances) |
 | Build Tool | Vite (vite-express) |
@@ -130,7 +130,7 @@ Clicking a recipe card opens a detailed view of that dish, including its image, 
 
 ## How It Works
 
-The frontend is built from three main components, a landing page, a selector for choosing intolerances and cuisine, and a meals view for displaying and exploring the generated recipes, all rendered from a single root component that tracks which view is currently active. Selecting intolerances and a cuisine updates state in the root component, and clicking through to see recipes sends a request to the backend with those selections included as query parameters. On the backend, an Express.js server receives that request, builds a query string from the selected cuisine and intolerances, and calls the Spoonacular API to retrieve twelve matching recipes, each with full ingredient and instruction data included. The response is sent back to the frontend and rendered as a grid of recipe cards. Clicking a card opens a full recipe view, stripping any HTML tags from the recipe summary and removing duplicate ingredients pulled from the recipe's instructions before displaying them alongside the full set of steps.
+The frontend is built from three main components, a landing page, a selector for choosing intolerances and cuisine, and a meals view for displaying and exploring the generated recipes, all rendered from a single root component that tracks which view is currently active. Selecting intolerances and a cuisine updates state in the root component, and clicking through to see recipes sends a request to the backend with those selections included as query parameters. On the backend, an Express.js server receives that request, builds a query string from the selected cuisine and intolerances, and calls the Spoonacular API to retrieve twelve matching recipes, each with full ingredient and instruction data included. The response is sent back to the frontend and rendered as a grid of recipe cards. Clicking a card opens a full recipe view and removes duplicate ingredients pulled from the recipe's instructions before displaying them alongside the full set of steps.
 
 <br>
 
